@@ -12,13 +12,35 @@ const rl = readline.createInterface({
 });
 
 // the function that will be called by the unit test below
+
 const rockPaperScissors = (hand1, hand2) => {
+  hand1 = hand1.toLowerCase().trim()
+  hand2 = hand2.toLowerCase().trim()
+
+
+  let hands = ['rock','paper','scissors']
+  let playerOne = hands.indexOf(hand1) + 1
+  let playerTwo = hands.indexOf(hand2) + 1
+
+
+  if (Math.abs(playerOne-playerTwo)%3==0){
+    return "It's a tie!"
+  } else if (Math.abs(playerOne-playerTwo)%3==1) {
+    return "Hand two wins!"
+  } else if (Math.abs(playerOne-playerTwo)%3==2) {
+    return "Hand one wins!"
+  }
+
+
+  // console.log("hand1",playerTwo)
+
+
 
   // Write code here
   // Use the unit test to see what is expected
 
 }
-
+// rockPaperScissors()
 // the first function called in the program to get an input from the user
 // to run the function use the command: node main.js
 // to close it ctrl + C
@@ -60,3 +82,10 @@ if (typeof describe === 'function') {
   getPrompt();
 
 }
+
+
+
+
+
+
+
