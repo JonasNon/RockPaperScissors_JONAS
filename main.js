@@ -31,14 +31,6 @@ const rockPaperScissors = (hand1, hand2) => {
     return "Hand one wins!"
   }
 
-
-  // console.log("hand1",playerTwo)
-
-
-
-  // Write code here
-  // Use the unit test to see what is expected
-
 }
 // rockPaperScissors()
 // the first function called in the program to get an input from the user
